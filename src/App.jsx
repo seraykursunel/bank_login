@@ -52,7 +52,7 @@ const submit = (e)=> {
         <Message status={verified} />
 
         <div>
-          <input required type="password" name="charOne" value={userInput.charOne} onChange={e=>setUserInput({...userInput, charOne:e.target.value})}/>
+          <input required type="password" name="charOne" maxLength="1" value={userInput.charOne} onChange={e=>setUserInput({...userInput, charOne:e.target.value})}/>
 
           <input required type="password" name="charTwo" maxLength="1" value={userInput.charTwo} onChange={e=>setUserInput({...userInput, charTwo:e.target.value})}/>
 
